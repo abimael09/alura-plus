@@ -3,11 +3,15 @@
     --cinza-secundario: #C0C0C0;
     --botao-azul: #167BF7;
     --cor-de-fundo: #00030C;
+    --font-primaria: 'Inter';
 }
 
 body {
     background-color: var(--cor-de-fundo);
     color: var(--branco-primario);
+    font-family: var(--font-primaria);
+    font-size: 16px;
+    font-weight: 400;
 }
 
 * {
@@ -23,4 +27,44 @@ body {
 
 .container {
     height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.container__caixa {
+    margin: 0 6em;
+}
+
+.container__titulo {
+    font-size: 28px;
+    font-weight: 700;
+    padding: 125px 54px 22px;
+    text-align: center;
+}
+
+.container__imagem {
+   margin: 1em 0 2em 0;
+}
+
+.container__botao {
+    background-color: var(--botao-azul);
+    border-radius: 8px;
+    padding: 1em;
+    color: var(--branco-primario);
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.botao__secundario {
+    background-color: transparent;
+    border: 2px solid var(--branco-primario);
+    text-align: center;
+}
+
+.container__aviso {
+    color: var(--cinza-secundario);
+    text-align: center;
+    font-size: 12px;
 }
