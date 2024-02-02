@@ -23,6 +23,8 @@ body {
     background-image: url("/img/Background.png");
     background-repeat: no-repeat;
     background-size: contain;
+    align-items: center;
+    text-align: center;
 }
 
 .container {
@@ -38,8 +40,6 @@ body {
 .container__titulo {
     font-size: 28px;
     font-weight: 700;
-    padding: 125px 54px 22px;
-    text-align: center;
 }
 
 .container__imagem {
@@ -67,4 +67,33 @@ body {
     color: var(--cinza-secundario);
     text-align: center;
     font-size: 12px;
+}
+
+.secundario__imagem {
+    width: 80%;
+}
+
+.secundario {
+    align-items: center;
+    margin: 0 10em;
+}
+
+.descricao__titulo {
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--branco-primario);
+    margin-bottom: 0.1em;
+}
+
+.descricao__texto {
+    color: var(--cinza-secundario);
+}
+
+.secundario__botao {
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.container__descricao {
+    padding: 0em 2.3em 0em 0em;
 }
